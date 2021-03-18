@@ -1,0 +1,16 @@
+/Huan.FreeSqlDbStorage/bin
+/Huan.SqlSugarDbStorage/bin
+/Huan.DbSwitcher.Tests/bin
+/Huan.DbStorage/bin
+/Huan.DbSwitcher/bin
+/Huan.MongoDbStorage/bin
+/Huan.DbSwitcher.DbStorage/obj
+/Huan.DbSwitcher.SqlSugarDbStorage/obj
+/Huan.DbSwitcher/obj
+/Huan.MongoDbStorage/obj
+/Huan.SqlSugarDbStorage/obj
+/Huan.FreeSqlDbStorage/obj
+/Huan.DbStorage/obj
+/Huan.DbSwitcher.Tests/obj
+/Huan.DbSwitcher.FreeSqlDbStorage/obj
+/Huan.DbSwitcher.MongoDbStorage/obj

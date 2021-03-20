@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "u9ZmKHhEmMRZ7d/3Z8cIm2kwv7lsf+r8Nq1XuMJbrLhc92Zp4uEoPOTPCHSbzEsToruBY+pcu7t3ZtIlImaxSw==",
+  "success": true,
+  "projectFilePath": "D:\\Project\\Huan.DbSwitcher\\Huan.DbSwitcher.Store\\Huan.DbSwitcher.Store.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

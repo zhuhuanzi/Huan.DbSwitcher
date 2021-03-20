@@ -23,7 +23,7 @@ Please note: once the use of the open source projects as well as the reference f
 TODO
 
 ## Q&A
-If you have any questions, you can go to  [Issues](https://github.com/rivenfx/Framework/issues)  to ask them.
+If you have any questions, you can go to  [Issues](https://github.com/zhuhuanzi/Huan.DbSwitcher/issues)  to ask them.
 
 ## Reference project
 

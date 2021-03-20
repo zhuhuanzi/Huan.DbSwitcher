@@ -33,6 +33,9 @@ If you have any questions, you can go to  [Issues](https://github.com/rivenfx/Fr
 
 - [ABP](https://github.com/aspnetboilerplate/aspnetboilerplate)
 - [RivenFx](https://github.com/rivenfx)
+- [FreeSQL](https://github.com/dotnetcore/FreeSql)
+- [SqlSugar](https://github.com/donet5/SqlSugar)
+- [MongoDB.Driver](https://github.com/mongodb/mongo-csharp-driver)
 
 
 

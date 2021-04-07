@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Huan.DbSwitcher.Store\Huan.DbSwitcher.Store.csproj" />
+  </ItemGroup>
+
 </Project>

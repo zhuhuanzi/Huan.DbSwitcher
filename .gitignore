@@ -14,3 +14,15 @@
 /Huan.DbSwitcher.Tests/obj
 /Huan.DbSwitcher.FreeSqlDbStorage/obj
 /Huan.DbSwitcher.MongoDbStorage/obj
+/Huan.DbSwitcher.FreeSqlStoreTests/bin
+/Huan.DbSwitcher.MongoStoreTests/bin
+/Huan.DbSwitcher.Store/bin
+/Huan.DbSwitcher.SqlSugarStore/bin
+/Huan.DbSwitcher.MongoStore/bin
+/Huan.DbSwitcher.FreeSqlStore/bin
+/Huan.DbSwitcher.Store/obj
+/Huan.DbSwitcher.FreeSqlStore/obj
+/Huan.DbSwitcher.MongoStoreTests/obj
+/Huan.DbSwitcher.MongoStore/obj
+/Huan.DbSwitcher.FreeSqlStoreTests/obj
+/Huan.DbSwitcher.SqlSugarStore/obj

@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Huan.DbSwitcher.FreeSqlStore\Huan.DbSwitcher.FreeSqlStore.csproj" />
+    <ProjectReference Include="..\Huan.DbSwitcher.MongoStore\Huan.DbSwitcher.MongoStore.csproj" />
+  </ItemGroup>
+
 </Project>

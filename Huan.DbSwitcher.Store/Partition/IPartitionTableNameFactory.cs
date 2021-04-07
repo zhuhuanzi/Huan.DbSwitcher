@@ -1,13 +1,12 @@
-﻿namespace Huan.DbSwitcher.Store.Partition
+namespace Huan.DbSwitcher.Store.Partition
 {
     public interface IPartitionTableNameFactory
     {
         /// <summary>
-        /// The get partition table name
+        /// 获取表名
         /// </summary>
-        /// <param name="basicTableName"></param>
-        /// <param name="partitionId"></param>
-        /// <returns></returns>
-        string GetPartitionTableName(string basicTableName, object partitionId);
+        /// <param name="partitionId">分表键值</param>
+        /// <returns>表名</returns>
+        string GetTableName(string basicTableName, object partitionId);
     }
 }

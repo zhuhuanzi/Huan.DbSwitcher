@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Huan.DbSwitcher</PackageId>
+    <Version>0.1.0-bate</Version>
+    <Authors>清欢</Authors>
   </PropertyGroup>
 
   <ItemGroup>

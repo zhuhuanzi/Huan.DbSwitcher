@@ -14,8 +14,9 @@ Please note: once the use of the open source projects as well as the reference f
 
 
 ## Nuget Packages
-|Package|Status|Downloads|
-|:------|:-----:|:-----:|
+| Package         | Status     |
+| --------------- | ---------- |
+| Huan.DbSwitcher | ![Nuget](https://img.shields.io/badge/nuget-v0.1.0--bate-green) |
 
 
 

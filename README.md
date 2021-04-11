@@ -33,21 +33,20 @@ Install-Package Huan.DbSwitcher -Version 0.1.0-bate
 ```c#
 public IServiceProvider ConfigureServices(IServiceCollection services)
 {
+    services.AddDbSwitcher();
     
-    		services.AddDbSwitcher();
-    
-            services.AddMongoDbStore(new MongoDbSetting()
-            {
-                Name = "DefaultMongoDb",
-                ConnectionString = "mongodb://admin:admin123@127.0.0.1:27017/HuanDbSwitcher",
-                DatabaseName = "HuanDbSwitcher",
-            });
+    services.AddMongoDbStore(new MongoDbSetting()
+    {
+       Name = "DefaultMongoDb",
+       ConnectionString = "mongodb://admin:admin123@127.0.0.1:27017/HuanDbSwitcher",
+       DatabaseName = "HuanDbSwitcher",
+    });
     		
-    		services.AddFreeSqlDbStore(new FSqlSetting(){
-                Name="DefaultFreesql",
-                ConnectionString="Server=127.0.0.1,1433;Database=HuanDbSwitcher;User Id=sa;Password=admin123;",
-                DatabaseType = DatabaseType.SqlServer
-            });
+    services.AddFreeSqlDbStore(new FSqlSetting(){
+       Name="DefaultFreesql",
+       ConnectionString="Server=127.0.0.1,1433;Database=HuanDbSwitcher;User Id=sa;Password=admin123;",
+       DatabaseType = DatabaseType.SqlServer
+    });
 }    
 
 ```
@@ -65,7 +64,7 @@ public class Demo
 
     public void Examples()
     {
-        //ChangeProvider,Default is sql,If you want  change to nosql,please use ChangeProvider.
+        //ChangeProvider,default is sql,If you want change to nosql,please use ChangeProvider.
         //_iDynamicChangeRepository.ChangeProvider("DefaultMongoDb", DatabaseType.MongoDB);
 
         //Query

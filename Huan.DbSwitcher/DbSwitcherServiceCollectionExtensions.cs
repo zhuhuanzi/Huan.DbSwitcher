@@ -1,4 +1,5 @@
 ﻿using Huan.DbSwitcher.Repositories;
+using Huan.DbSwitcher.Store;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
@@ -13,6 +14,7 @@ namespace Huan.DbSwitcher
         /// <returns></returns>
         public static IServiceCollection AddDbSwitcher(this IServiceCollection services)
         {
+            services.AddDbStore();
             services.TryAddTransient(typeof(IDynamicChangeRepository<,>), typeof(DynamicChangeRepository<,>));
             return services;
         }

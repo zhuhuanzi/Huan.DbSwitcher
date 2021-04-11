@@ -21,7 +21,76 @@ Please note: once the use of the open source projects as well as the reference f
 
 
 ## Demos
-TODO
+
+#### Installation package
+
+```
+Install-Package Huan.DbSwitcher -Version 0.1.0-bate
+```
+
+#### Register
+
+```c#
+public IServiceProvider ConfigureServices(IServiceCollection services)
+{
+    
+    		services.AddDbSwitcher();
+    
+            services.AddMongoDbStore(new MongoDbSetting()
+            {
+                Name = "DefaultMongoDb",
+                ConnectionString = "mongodb://admin:admin123@127.0.0.1:27017/HuanDbSwitcher",
+                DatabaseName = "HuanDbSwitcher",
+            });
+    		
+    		services.AddFreeSqlDbStore(new FSqlSetting(){
+                Name="DefaultFreesql",
+                ConnectionString="Server=127.0.0.1,1433;Database=HuanDbSwitcher;User Id=sa;Password=admin123;",
+                DatabaseType = DatabaseType.SqlServer
+            });
+}    
+
+```
+
+#### Use
+
+```C#
+public class Demo
+{
+    readonly IDynamicChangeRepository<DemoEntity, string> _iDynamicChangeRepository;
+    public Demo(IDynamicChangeRepository<DemoEntity, string> iDynamicChangeRepository)
+    {
+        _iDynamicChangeRepository = iDynamicChangeRepository;
+    }
+
+    public void Examples()
+    {
+        //ChangeProvider,Default is sql,If you want  change to nosql,please use ChangeProvider.
+        //_iDynamicChangeRepository.ChangeProvider("DefaultMongoDb", DatabaseType.MongoDB);
+
+        //Query
+        //_iDynamicChangeRepository.GetQuery().Where(x => x.Id = "1");
+
+        //Insert
+        //_iDynamicChangeRepository.Insert(...);
+
+        //Update
+        //_iDynamicChangeRepository.Update(...);
+
+        //Delete
+        //_iDynamicChangeRepository.Delete(...);
+
+        //UnitOfWork
+        //_iDynamicChangeRepository.BeginUnitOfWork();
+    }
+}
+```
+
+
+
+
+
+
 
 ## Q&A
 If you have any questions, you can go to  [Issues](https://github.com/zhuhuanzi/Huan.DbSwitcher/issues)  to ask them.
